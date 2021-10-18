@@ -1,0 +1,9 @@
+footer {
+  background:url('../../../images/footer/rsz_hospital.jpg') #00984A;
+  background-size:cover;
+  background-blend-mode: multiply;
+  color: white;
+}
+.quick-link a{
+    color: white;
+}
