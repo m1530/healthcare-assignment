@@ -20,6 +20,7 @@ const Menu = () => {
                         <Nav.Link as={NavLink} to="/about">About</Nav.Link>
                         <Nav.Link as={NavLink} to="/services">Services</Nav.Link>
                         <Nav.Link as={NavLink} to="/doctors">Doctors</Nav.Link>
+                        <Nav.Link as={NavLink} to="/career">Career</Nav.Link>
                         {
                             user?.displayName && <Nav.Link className="text-white">{user.displayName}</Nav.Link>
                         }

@@ -15,6 +15,8 @@ import Doctor from './components/Home/Doctor/Doctor';
 import About from './components/Home/About/About';
 import Hotline from './components/SubMenu/Hotline';
 import Booking from './components/Home/Booking/Booking';
+import Career from './components/Home/Career/Career';
+import Job from './components/Home/Career/Job/Job';
 
 function App() {
   return (
@@ -53,8 +55,14 @@ function App() {
             <PrivateRoute path="/booking">
               <Booking></Booking>
             </PrivateRoute>
+            <PrivateRoute path="/career">
+              <Career></Career>
+            </PrivateRoute>
             <Route path="/login">
               <Login></Login>
+            </Route>
+            <Route path="/job">
+              <Job></Job>
             </Route>
             <Route path="*">
               <NotFound></NotFound>
