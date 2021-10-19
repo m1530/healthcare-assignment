@@ -1,5 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './SubMenu.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser, faPhone, faBed } from '@fortawesome/free-solid-svg-icons';
 
 const SubMenu = () => {
     return (
@@ -9,7 +12,9 @@ const SubMenu = () => {
                     <div className="card h-100">
                         <div className="card-body card-style">
                             <h5>Call for appointment</h5>
-                            <button className="btn btn-danger btn-sm">Call</button>
+                            <Link to='/hotline'>
+                                <button className="btn text-white btn-sm"><h3><FontAwesomeIcon icon={faPhone} /> Take Appointment</h3></button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -17,7 +22,9 @@ const SubMenu = () => {
                     <div className="card h-100">
                         <div className="card-body card-style">
                             <h5>Find Doctors</h5>
-                            <button className="btn btn-danger btn-sm">Call</button>
+                            <Link to='/doctors'>
+                                <button className="btn text-white btn-sm"><h3><FontAwesomeIcon icon={faUser} /> Our Doctors</h3></button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -25,7 +32,9 @@ const SubMenu = () => {
                     <div className="card h-100">
                         <div className="card-body card-style">
                             <h5>Apply for Bed</h5>
-                            <button className="btn btn-danger btn-sm">Call</button>
+                            <Link to='/booking'>
+                                <button className="btn text-white btn-sm"><h3><FontAwesomeIcon icon={faBed} />Take Appointment</h3></button>
+                            </Link>
                         </div>
                     </div>
                 </div>

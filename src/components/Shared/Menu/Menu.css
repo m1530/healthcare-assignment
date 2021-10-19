@@ -1,3 +1,12 @@
 .bg-color{
     background-color: #00984A;
 }
+
+.logout-btn{
+    background-color: rgb(194, 7, 7);
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 12px;
+    height: 30px;
+}

@@ -7,3 +7,6 @@ footer {
 .quick-link a{
     color: white;
 }
+.navlink{
+  text-decoration: none;
+}

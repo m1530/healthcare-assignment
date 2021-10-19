@@ -1,7 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { NavLink } from 'react-router-dom';
 import { faHome, faEnvelopeOpen, faPhone } from '@fortawesome/free-solid-svg-icons';
-import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faGoogle, faGithub, faPinterest, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons';
 import './Footer.css';
 
 const Footer = () => {
@@ -16,26 +17,24 @@ const Footer = () => {
                                     Dr Moyna mia medical center
                                 </h6>
                                 <p>
-                                    Here you can use rows and columns to organize your footer
-                                    content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit.
+                                    Dr Moyna mia medical center adds yet another feather in its ornate cap - Dr Moyna mia medical center commissioned on 2012. A new era in the field of care is dawned, a new chapter opened.
                                 </p>
                             </div>
-                            {/* <hr className="w-100 clearfix d-md-none" /> */}
                             <div className="col-md-2 col-lg-2 mx-auto mt-3 quick-link">
                                 <h6 className="text-uppercase mb-4 fw-bold">Quick Links</h6>
                                 <p>
-                                    <a href="/#">About US</a>
+                                    <NavLink className="navlink" to='/home'>Home</NavLink>
                                 </p>
                                 <p>
-                                    <a href="/#">Services</a>
+                                    <NavLink className="navlink" to='/about'>About US</NavLink>
                                 </p>
                                 <p>
-                                    <a href="/#">Doctors</a>
+                                    <NavLink className="navlink" to='/services'>Services</NavLink>
+                                </p>
+                                <p>
+                                    <NavLink className="navlink" to='/doctors'>Doctors</NavLink>
                                 </p>
                             </div>
-                            {/* <hr className="w-100 clearfix d-md-none" /> */}
-
                             <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                                 <h6 className="text-uppercase mb-4 fw-bold">Contact</h6>
                                 <p><FontAwesomeIcon icon={faHome} /> College Road Chargachh 3460</p>
@@ -47,39 +46,30 @@ const Footer = () => {
 
                     <hr className="my-3" />
 
-                    <section class="p-3 pt-0">
-                        <div class="row d-flex align-items-center">
-                            <div class="col-lg-7 text-center text-md-start">
-                                <div class="p-3">
+                    <section className="p-3 pt-0">
+                        <div className="row d-flex align-items-center">
+                            <div className="col-lg-7 text-center text-md-start">
+                                <div className="p-3">
                                     &copy; 2020 Copyright:
                                     Drmoinamiamedical.com
                                 </div>
                             </div>
-                            <div class="col-lg-5 ml-lg-0 text-center text-md-end">
-                                <a
-                                    class="btn btn-outline-light btn-floating m-1"
-                                    class="text-white"
-                                    role="button"
-                                ><i class="fab fa-facebook-f"></i
-                                ></a>
-                                <a
-                                    class="btn btn-outline-light btn-floating m-1"
-                                    class="text-white"
-                                    role="button"
-                                ><i class="fab fa-twitter"></i
-                                ></a>
-                                <a
-                                    class="btn btn-outline-light btn-floating m-1"
-                                    class="text-white"
-                                    role="button"
-                                ><i class="fab fa-google"></i
-                                ></a>
-                                <a
-                                    class="btn btn-outline-light btn-floating m-1"
-                                    class="text-white"
-                                    role="button"
-                                ><i class="fab fa-instagram"></i
-                                ></a>
+                            <div className="col-lg-5 ml-lg-0 text-center text-md-end">
+                                <NavLink to='/login' className="btn btn-outline-light m-1">
+                                    <FontAwesomeIcon icon={faFacebook} />
+                                </NavLink>
+                                <NavLink to='/login' className="btn btn-outline-light m-1">
+                                    <FontAwesomeIcon icon={faGoogle} />
+                                </NavLink>
+                                <NavLink to='/login' className="btn btn-outline-light m-1">
+                                    <FontAwesomeIcon icon={faPinterest} />
+                                </NavLink>
+                                <NavLink to='/login' className="btn btn-outline-light m-1">
+                                    <FontAwesomeIcon icon={faGithub} />
+                                </NavLink>
+                                <NavLink to='/login' className="btn btn-outline-light m-1">
+                                    <FontAwesomeIcon icon={faYoutubeSquare} />
+                                </NavLink>
                             </div>
                         </div>
                     </section>

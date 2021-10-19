@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Diagnostics",
+        "img": "https://i.ibb.co/Qm51SSj/rsz-diagnostic.jpg",
+        "description": "Dr moyna mia medical center are supported by ParkwayHealth Laboratory in our clinical laboratory services, which range from histopathology to DNA testing, and much more. These services also support our teaching and research capabilities.Located within our hospitals, these laboratories are managed by a team of pathologists and laboratory scientists who handle samples of tissue, blood and other bodily fluid from over 60 doctors across 7 facilities daily. we provide ",
+        "services": "Haematology and immunohaematology, Biochemistry, Immunology and serology, Hormone, Therapeutic drug monitoring, Drug of abuse screening, Body fluids, seminal fluid, urine and stool analysis, Microbiology, Clinical molecular (PCR testing) and specialised testing"
+    },
+    {
+        "id": 2,
+        "name": "Ambulance",
+        "img": "https://i.ibb.co/NCQWrfw/rsz-ambulance.jpg",
+        "description": "Ambulance services in New Jersey often work independently and are yet intimately connected and coordinated with the 911 EMS and to local hospitals. When you call an ambulance, you are counting on several things, the most important of which is quick, professional service.",
+        "services": "We provide both ac and non ac service"
+    },
+    {
+        "id": 3,
+        "name": "Pharmecy",
+        "img": "https://i.ibb.co/6FxRhD9/rsz-1pharmacy.jpg",
+        "description": "Dr moyna mia medical center have beautiful Medicine corner is a well-known retailer of medicine in Bangladesh. We provide all kinds of life saving medicine, which are available in our hospital. Our aim is to provide good medicine and best service quality to the patients.",
+        "services": "any time you can buy medicine"
+    },
+    {
+        "id": 4,
+        "name": "Imaging",
+        "img": "https://i.ibb.co/Y2kkpRb/rsz-surgery.jpg",
+        "description": "Our operating theatres are designed for optimal efficiency, and facilitate a seamless operational flow for performing complex surgical operations. Every one of our operating rooms is equipped with sophisticated equipment – from positive pressure rooms and ceiling-mounted equipment units to advancements in surgical technology for strong performance. To reduce the risk of infection, all units operate with single-use surgical devices only.",
+        "services": "Philips Inginia 3.0Tesla Digital MRI, Philips Inginia 3.0Tesla Digital MRI etc"
+    },
+    {
+        "id": 5,
+        "name": "Hospital room and services",
+        "img": "https://i.ibb.co/WNhMSky/rsz-hospital-room.jpg",
+        "description": "Our philosophy is to provide you with a range of healthcare options to improve your quality of life. This focus on care and comfort is also present in our accommodation designs which emphasise welcoming interiors and multiple configurations to meet your needs.",
+        "services": "We provide single sit, single room, double room facility"
+    },
+    {
+        "id": 6,
+        "name": "Covid 19 test",
+        "img": "https://i.ibb.co/NCNDjvY/rsz-covid19.jpg",
+        "description": "We test covid 19 in our hospital If you show any symptoms related to COVID-19, if possible contact our hospital immediately. The following hospitals have been allocated as of now to treat COVID-19 patients. Please check this link for regular updates on the hospitals http://www.corona.gov.bd/. ",
+        "services": "Vaccination, Emergency etc"
+    }
+]
