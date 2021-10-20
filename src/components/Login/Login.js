@@ -6,11 +6,19 @@ import github from '../../images/login/github.png';
 import google from '../../images/login/google.png';
 
 const Login = () => {
-    const { signInWithGoogle, signInWithGithub, getName, getEmail, getPassword, handleSignUp, togaleLoginToRegister, isLogin, setUser, setError, setLoading, error } = useAuth();
+    // fetch data from use auth
+    const { signInWithGoogle, signInWithGithub, getName, getEmail, getPassword, handleSignUp, togaleLoginToRegister, isLogin, setUser, setError, setLoading, error, updateUser } = useAuth();
 
     const location = useLocation();
     const history = useHistory();
+    // use redirect only for google and github
     let redirect = location.state?.from || '/';
+
+    const emaiRedirect = () => {
+        if (updateUser) {
+            history.push(redirect);
+        }
+    }
 
     const googleLogin = () => {
         signInWithGoogle()
@@ -35,12 +43,14 @@ const Login = () => {
             );
     }
 
+
     return (
         <div className="text-center my-4">
             <h2>Please {isLogin ? 'Login' : 'Register'}</h2>
             <p className="text-danger text-center"></p>
             <div className="w-25 mx-auto">
-                <Form onSubmit={handleSignUp}>
+                {/* login from */}
+                <Form onSubmit={isLogin ? emaiRedirect : handleSignUp}>
                     <p className="text-danger">{error}</p>
                     {
                         !isLogin && <Row>
@@ -108,6 +118,7 @@ const Login = () => {
                 <hr className="w-25 mx-auto" />
                 <p> Sign in with</p>
                 <div>
+                    {/* button for google login */}
                     <button
                         onClick={googleLogin}
                         className="btn btn-light mt-3 w-100 border border-secondary"
@@ -118,7 +129,7 @@ const Login = () => {
                             alt="github-icon"
                         /> Sign in with Google
                     </button>
-
+                    {/* button for github login */}
                     <button onClick={githubLogin} className="btn btn-light mt-3 w-100 border border-secondary">
                         <img
                             width="26px"

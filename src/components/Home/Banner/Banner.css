@@ -4,15 +4,5 @@
     padding: 2px 20px;
     font-weight: bold;
     border-radius: 10px;
-    border: 0px;
-    outline: none;
 }
-.btn-custome:hover{
-    background-color: #cf1b1b;
-    opacity: 75%;
-}
-.btn-custome:focus{
-    background-color: #00984A;
-    outline: 0;
-    box-shadow: none;
-}
+

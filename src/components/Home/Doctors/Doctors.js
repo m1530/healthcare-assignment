@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import useDoctors from '../../../hooks/useDoctors/useDoctors';
 
 const Doctors = () => {
+    // fetch doctor from hook
     const [doctors] = useDoctors();
     console.log(doctors);
     return (
@@ -13,7 +14,7 @@ const Doctors = () => {
                 </div>
                 <div className="row row-cols-1 row-cols-md-3 g-4">
                     {
-
+                        // show all doctors
                         doctors.map(doctor => (
                             <div key={doctor.id} className="col">
                                 <div className="card h-100">
@@ -25,7 +26,7 @@ const Doctors = () => {
                                         {/* <p className="card-text">Room No: {doctor.room}</p>
                                         <p className="card-text">Fee {doctor.fee}tk</p> */}
                                         <Link to={`/doctor/${doctor.id}`}>
-                                            <button className="btn-custome">Make Appointment</button>
+                                            <button className="btn btn-success rounded">Make Appointment</button>
                                         </Link>
                                     </div>
                                 </div>

@@ -23,6 +23,7 @@ const Booking = () => {
             </Toast>
             {/* end toast */}
             <h6 className="my-5">OR</h6>
+            {/* take apoinment form */}
             <Form className="bg-dark p-4 w-75 mx-auto rounded">
                 <h5 className="text-white mb-3">For Appointments</h5>
                 <Form.Group className="mb-3" controlId="formBasicName">

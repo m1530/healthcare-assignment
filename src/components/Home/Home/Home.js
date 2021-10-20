@@ -2,7 +2,7 @@ import React from 'react';
 import SubMenu from '../../SubMenu/SubMenu';
 import About from '../About/About';
 import Banner from '../Banner/Banner';
-import Doctors from '../Doctors/Doctors';
+import DoctorSlider from '../DoctorSlider/DoctorSlider';
 import Services from '../Services/Services';
 
 const Home = () => {
@@ -11,7 +11,9 @@ const Home = () => {
             <Banner></Banner>
             <SubMenu></SubMenu>
             <Services></Services>
-            <Doctors></Doctors>
+            <div className="doctor-slider">
+                <DoctorSlider />
+            </div>
             <About></About>
         </div>
     );

@@ -5,6 +5,7 @@ const jOB = () => {
     return (
         <div className="Container my-5 text-center">
             <h5 className="mb-3">Fill Up and Submit for applying job</h5>
+            {/* form for apply job */}
             <Form className="bg-dark p-4 w-50 mx-auto rounded">
 
                 <Form.Group className="mb-3" controlId="formBasicName">

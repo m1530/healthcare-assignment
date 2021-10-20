@@ -1,0 +1,108 @@
+.doctor-slider{
+  width: 86%;
+  padding: 10px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 10px;
+}
+/* card style */
+.slider-card {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* card body section design */
+.details {
+  background: #fff;
+  width: 100%;
+  /* height: 120px; */
+  padding: 10px;
+}
+
+.details h2 {
+  text-align: center;
+}
+
+.details h2 .job-title {
+  font-size: 16px;
+  line-height: 2;
+  color: #333;
+  font-weight: 300;
+}
+/* carousel bullet btn design */
+.carousel .slick-dots {
+  bottom: -4.9vw;
+}
+
+.carousel .slick-dots li button {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+}
+
+.carousel .slick-dots li button:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  content: "";
+  text-align: center;
+  opacity: .5;
+  color: #000;
+  background-color: #fff;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.carousel .slick-dots li.slick-active button, .carousel .slick-dots li:hover button {
+  border-color: tomato;
+}
+
+.carousel .slick-dots li.slick-active button:before, .carousel .slick-dots li:hover button:before {
+  background-color: tomato;
+  opacity: 100%;
+}
+/* slider next and previous btn style */
+.carousel .slick-prev, .carousel .slick-next {
+  width:20px;
+  height:20px;
+  background-color: #fff;
+}
+
+.carousel .slick-prev:hover, .carousel .slick-prev:focus, .carousel .slick-next:hover, .carousel .slick-next:focus {
+  color: #fff;
+  outline: none;
+  background: #fff;
+}
+
+.carousel .slick-prev:before, .carousel .slick-next:before {
+  color: #000;
+  font-family: "Raleway", sans-serif;
+}
+
+.carousel .slick-next {
+  right: -45px;
+}
+
+.carousel .slick-prev {
+  left: -45px;
+}
+/* slider next and previus btn responsive */
+@media screen and (max-width:700px) {
+    .carousel .slick-next {
+  right: -1px;
+}
+
+.carousel .slick-prev {
+  left: -1px;
+}
+.doctor-slider{
+  width: 80%;
+  padding: 0px 10px;
+}
+}

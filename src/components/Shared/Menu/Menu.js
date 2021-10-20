@@ -16,7 +16,7 @@ const Menu = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ms-auto align-items-center">
-                        <Nav.Link as={NavLink} to="/home">Home</Nav.Link>
+                        <Nav.Link as={NavLink} to="/home" activeStyle={{ borderBottom: "2px solid", bottomBorderWidth:"thin" }}>Home</Nav.Link>
                         <Nav.Link as={NavLink} to="/about">About</Nav.Link>
                         <Nav.Link as={NavLink} to="/services">Services</Nav.Link>
                         <Nav.Link as={NavLink} to="/doctors">Doctors</Nav.Link>

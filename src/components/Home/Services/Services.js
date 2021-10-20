@@ -3,6 +3,7 @@ import useServices from '../../../hooks/useServices/useServices';
 import { Link } from 'react-router-dom';
 
 const Services = () => {
+    // fetch services from hook
     const [services] = useServices();
     console.log(services);
     return (
@@ -12,7 +13,7 @@ const Services = () => {
             </div>
             <div className="row row-cols-1 row-cols-md-3 g-4">
                 {
-
+                    // show all servicess
                     services.map(service => (
                         <div key={service.id} className="col">
                             <div className="card h-100">
@@ -21,7 +22,7 @@ const Services = () => {
                                     <h5 className="card-title">{service.name}</h5>
                                     <p className="card-text">{service.description.slice(0, 50)}</p>
                                     <Link to={`/service/${service.id}`}>
-                                        <button className="btn-custome">Read More</button>
+                                        <button className="btn btn-success rounded">Read More</button>
                                     </Link>
                                 </div>
                             </div>

@@ -17,7 +17,7 @@ const Doctor = () => {
         <div className="container my-5">
             <h3 className="text-center my-5"><span className="border-bottom mb-2 border-success border-bottom-3">Doctor Details</span></h3>
             <div className="row">
-                <div className="col-lg-6 mb-5">
+                <div className="col-lg-6 col-md-6 mb-5">
                     <div className="card rounded card-responsive p-3 shadow-lg">
                         <img src={doctor?.img} className="card-img-top rounded-pill" alt="..." />
                         <div className="card-body  text-center">
@@ -31,7 +31,7 @@ const Doctor = () => {
                     </div>
                 </div>
 
-                <div className="col-lg-6 text-center">
+                <div className="col-lg-6 col-md-6 text-center">
                     <Booking></Booking>
                 </div>
             </div>

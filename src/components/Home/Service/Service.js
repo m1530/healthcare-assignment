@@ -6,11 +6,13 @@ import './Service.css';
 import Booking from '../Booking/Booking';
 
 const Service = () => {
+    // use params for getting dynamic id
     const { serviceId } = useParams();
     const [services] = useServices();
 
     const [service, setService] = useState({});
     console.log(service);
+    // use useeffect and find for getting single service
     useEffect(() => {
         const fetchService = services.find((item) => item?.id == serviceId);
         setService(fetchService);
@@ -18,10 +20,11 @@ const Service = () => {
 
     return (
         <div className="container">
+            {/* display service information */}
             <h3 className="text-center my-5"><span className="border-bottom mb-2 border-success border-bottom-3">Service Information</span></h3>
             <div className="row mt-2 mb-5">
-                <div className="col-lg-7">
-                    <div className="service-image text-left my-5">
+                <div className="col-lg-7 col-md-7">
+                    <div className="service-image text-center text-md-start my-5">
                         <img className="img-fluid rounded" src={service?.img} alt="" />
                     </div>
                     <div className="service-title">
@@ -31,7 +34,7 @@ const Service = () => {
                         <p>Special Service: {service?.services}</p>
                     </div>
                 </div>
-                <div className="col-lg-5 text-center mt-4">
+                <div className="col-lg-5 col-md-5 text-center mt-4">
                     <Booking></Booking>
                 </div>
             </div>
