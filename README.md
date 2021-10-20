@@ -1,6 +1,6 @@
 # Dr Moyna Mia Medical Center
 
-This project was bootstrapped with [Create React App](https://hospital-app-5d13f.web.app/).
+This project was bootstrapped with [Dr Moyna Mia Medical Center](https://hospital-app-5d13f.web.app/).
 
 * ### I have to create header menu and footer common for all routes.
 * ### Home page i have to show services, our doctors, about page and sub menu for quick find
