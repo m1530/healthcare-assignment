@@ -8,3 +8,4 @@ This project was bootstrapped with [Create React App](https://hospital-app-5d13f
 * ### use toggle login to registration system
 * ### use dynamic route for specific details.
 * ### use private route for authorization.
+* ### use React slick slider.
